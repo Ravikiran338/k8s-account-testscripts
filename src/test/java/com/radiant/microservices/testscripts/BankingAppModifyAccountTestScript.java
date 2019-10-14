@@ -100,7 +100,7 @@ public class BankingAppModifyAccountTestScript {
 							List<String> dataSet = webElementDataDetails.getDataSet();
 							if (dataSet != null && dataSet.size() > 0) {
 									Actions act = new Actions(driver);
-									Thread.sleep(10000);
+									Thread.sleep(6000);
 
 									customMessage = "select all records from look-up";
 									WebElementDetails lookupTableObj = bankingAppModifyAccountWebElementList.get(8);
@@ -111,6 +111,7 @@ public class BankingAppModifyAccountTestScript {
 									int selctedRecordNo = 0;
 									List<WebElement> rows = lookupTable
 											.findElements(By.cssSelector(rowsObj.getCssSelector()));
+									Thread.sleep(6000);
 									String DomainId = null;
 									JavascriptExecutor js = (JavascriptExecutor) driver;
 									for (int i = 1; i < rows.size(); i++) {
@@ -139,7 +140,7 @@ public class BankingAppModifyAccountTestScript {
 									WebElementDetails createBtn = bankingAppModifyAccountWebElementList.get(14);
 									bankingAppModifyAccount.createBtn(createBtn).click();
 									log.info(" Enter Street ");
-									Thread.sleep(10000);
+									Thread.sleep(12000);
 									}
 						   }	
 						}
