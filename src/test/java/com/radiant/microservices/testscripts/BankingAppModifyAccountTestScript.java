@@ -87,7 +87,7 @@ public class BankingAppModifyAccountTestScript {
 			driver = JWebDriver.getInstance().getWebDriver();
 			ResourceBundle resourceBundle = ResourceBundle.getBundle("ApplicationResources");
 			driver.get(resourceBundle.getString("application.url"));
-			
+			Thread.sleep(6000);
 			customMessage = "Click on Add button";
 			WebElementDetails userMenuobj = bankingAppModifyAccountWebElementList.get(0);
 			bankingAppModifyAccount.userMenu(userMenuobj).click();
@@ -118,10 +118,11 @@ public class BankingAppModifyAccountTestScript {
 										  if ((i % 10) == 0)
 										  {
 											    js.executeScript("window.scrollBy(0,1000)");
-											    rows.get(i).click();
+											    Thread.sleep(3000);
+											    //rows.get(i).click();
 										  }		
 										  List<WebElement> cols = rows.get(i).findElements(By.cssSelector("td"));
-										  DomainId = cols.get(1).getText();
+										  DomainId = cols.get(2).getText();
 										  
 										  if ((DomainId).trim().equalsIgnoreCase(webElementDataDetails.getDataSet().get(0))) {
 												rows.get(i).findElement(By.cssSelector(".btn-primary.btn-xs")).click();

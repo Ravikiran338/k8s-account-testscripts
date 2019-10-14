@@ -49,6 +49,19 @@
   
   <!-- Logout button -->
   <page-element no="5">
+    <type>button</type>
+    <id></id>
+    <name></name>
+    <className></className>
+    <cssSelector>.btn.navbar-btn</cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+  </page-element>
+  
+  
+  <!-- Logout button -->
+  <page-element no="6">
     <type></type>
     <id></id>
     <name></name>
@@ -61,16 +74,7 @@
   
   
   
-  <page-element no="6">
-    <type></type>
-    <id></id>
-    <name></name>
-    <className></className>
-    <cssSelector></cssSelector>
-    <xPath></xPath>
-    <linkText></linkText>
-    <data></data>
-  </page-element>
+  
   
   
   

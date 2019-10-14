@@ -119,7 +119,7 @@ public class BankingAppDeleteAccountTestScript {
 											  //  rows.get(i).click();
 										  }		
 										  List<WebElement> cols = rows.get(i).findElements(By.cssSelector("td"));
-										  DomainId = cols.get(1).getText();
+										  DomainId = cols.get(2).getText();
 										  if ((DomainId).trim().equalsIgnoreCase(webElementDataDetails.getDataSet().get(0))) {
 											/*	rows.get(i).findElement(By.cssSelector(".btn.btn-success.btn-xs")).click();
 												Thread.sleep(4000);
