@@ -93,6 +93,7 @@ public class BankingAppAddAccountTestScript {
 			driver = JWebDriver.getInstance().getWebDriver();
 			ResourceBundle resourceBundle = ResourceBundle.getBundle("ApplicationResources");
 			driver.get(resourceBundle.getString("application.url"));
+			Thread.sleep(6000);
 			customMessage = "Click on Add button";
 			WebElementDetails userMenuobj = bankingAppAddAccountWebElementList.get(0);
 			bankingAppAddAccount.userMenu(userMenuobj).click();
@@ -109,7 +110,7 @@ public class BankingAppAddAccountTestScript {
 									customMessage = "Click on Add button";
 									WebElementDetails addBtnobj = bankingAppAddAccountWebElementList.get(1);
 									bankingAppAddAccount.addUserbtn(addBtnobj).click();
-									Thread.sleep(10000);
+									Thread.sleep(14000);
 									
 									customMessage = "Create buttonn";
 									WebElementDetails CreateButnobj = bankingAppAddAccountWebElementList.get(6);
@@ -153,7 +154,7 @@ public class BankingAppAddAccountTestScript {
 									log.info(" Enter Street ");
 									Thread.sleep(1000);
 									
-									Thread.sleep(10000);
+									Thread.sleep(14000);
 									}
 						   }	
 						}
